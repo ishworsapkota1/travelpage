@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <div class="main">
+    <div class="top">
+      <div> 
+        <div class="top_part">
+          <div class="logo"> <p> logo</p> </div>
+          <div class="navbar">
+            <ul>
+              <li><a href="">Explore</a></li>
+              <li><a href="">Destinations</a></li>
+              <li><a href="">Packages</a></li>
+              <li><a href="">Flights</a></li>
+              <li><a href="">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="nav_right">
+            <div class="nav_icon"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+            <div class="nav_icon"><a href=""><i class="fa-solid fa-user"></i></a></div>
+          </div>
+        </div>
+        
+        <img src="tourism-silhouettes-top-order-4k_1540574370.jpg" alt="" width="100%" height="500px" >
+        
+      </div>
+    </div>
+  </div> 
+  
+  <div class="tab_bs">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#round_trip" type="button" role="tab" aria-controls="home" aria-selected="true">Round trip</button>
+      </li>
+      
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#one_way" type="button" role="tab" aria-controls="profile" aria-selected="false">One way</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#multi_city" type="button" role="tab" aria-controls="contact" aria-selected="false">Multi-City</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="round_trip" role="tabpanel" aria-labelledby="round_trip-tab">
+        <form class="form-floating forms">
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-map-location-dot"></i> location <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="lofoten Islands">
+            
+          </div>
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-users"></i> Guests <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="2 adults">
+            
+          </div>
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-plane-arrival"></i> Arrival <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="May 8th, 2021">
+            
+          </div>
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-plane-departure"></i> departure <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="May 19th, 2021">
+            
+          </div>
+          <button>Let's go!</button>
+          
+        </form>
+      </div>
+      <div class="tab-pane fade" id="one_way" role="tabpanel" aria-labelledby="one_way-tab">
+        <form class="form-floating forms">
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-map-location-dot"></i> From <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="lofoten Islands">
+            
+          </div>
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-map-location-dot"></i> To <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="lofoten Islands">
+            
+          </div>
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-users"></i> Guests <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="2 adults">
+            
+          </div>
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-plane-arrival"></i> Arrival <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="May 8th, 2021">
+            
+          </div>
+          <!-- <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-plane-departure"></i> departure <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="May 19th, 2021">
+            
+          </div> -->
+          <button>Let's go!</button>
+          
+        </form>
+        
+      </div>
+      
+      <div class="tab-pane fade" id="multi_city" role="tabpanel" aria-labelledby="multi_city-tab">
+        <form class="form-floating forms">
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-map-location-dot"></i> Flight1 <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="location">
+            
+          </div>
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-users"></i> Guests <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="2 adults">
+            
+          </div>
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-plane-arrival"></i> Arrival <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="May 20th, 2021">
+            
+          </div>
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-plane-departure"></i> departure <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="May 19th, 2021">
+            
+          </div>
+          
+          
+        </form>
+        <form class="form-floating forms">
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-map-location-dot"></i> Flight2 <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="location">
+            
+          </div>
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-users"></i> Guests <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="2 adults">
+            
+          </div>
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-plane-arrival"></i> Arrival <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="May 18th, 2022">
+            
+          </div>
+          <div class="form_mini">
+            <label for="floatingInputValue"><i class="fa-solid fa-plane-departure"></i> departure <i class="fa-solid fa-chevron-down"></i></label>
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="July 23th, 2023">
+            
+          </div>
+          
+          <button>Let's go!</button>
+        </form>
+        
+      </div>
+    </div>
+    
+  </div>
+  
+  <section>
+    <div class="container mt-5">
+      
+      <div class="div_min">
+        <div> <h3> Discover your next adventure  </h3>      </div>  
+        <div><h5><a href=""> Show me more </a></h5> </div>
+      </div>
+      <div class="div_img row">
+        <div class="dimg col-md-3 col-sm-6 col-6">
+          <span id="love1"> <i class="fa-solid fa-heart  love"> </i> </span>
+           <img src="winter-in-canada-moraine-lake-hd-wallpaper-thumb.jpg" alt="" width="280px"  height="150">
+        </div>
+        
+        <div class="dimg col-md-3 col-sm-6 col-6">
+          <span id="love2">  <i class="fa-solid fa-heart  love"></i> </span>
+            <img src="pngtree-tourism-earth-sky-travel-image_21259.jpg" alt="" width="280px"  height="150">
+          </div>
+        
+        <div class="dimg col-md-3 col-sm-6 col-6">
+          <span id="love3"><i class="fa-solid fa-heart  love"></i> </span>
+            <img src="winter-in-canada-moraine-lake-hd-wallpaper-thumb.jpg" alt="" width="280px"  height="150">
+          </div>
+        
+        <div class="dimg col-md-3 col-sm-6 col-6">
+          <span id="love4"><i class="fa-solid fa-heart love "></i> </span>
+            <img src="pngtree-tourism-earth-sky-travel-image_21259.jpg" alt="" width="280px"  height="150">
+          </div>
+        
+      </div>
+      
+    </div>
+  </section>
+  <div class="container">
+    <div class="cards">
+      <h2>Popular Tour Packages</h2>
+      <div class="card_main row">
+
+        <!-- [[[[[]]]]] -->
+        
+        <div class="swiper mySwiper">
+
+          <div class="swiper-wrapper">
+    
+        <div class="swiper-slide">  
+          <div class="card">
+            <div class="card_img">
+              <img src="photo-1585409677983-0f6c41ca9c3b.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <p><i class="fa-solid fa-location-dot"></i> Everest Region Trek , Nepal</p>
+              <h5 class="card-title">Everest Base Camp Trek</h5>
+              <p class="card-text">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>  9 Reviews</p>
+              <div class="txt_str"> <p><i class="fa-solid fa-clock"></i> 15 Days</p> <h5><del>$1545</del> $1295 </h5></div>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+       </div>
+
+      <div class="swiper-slide">  
+          <div class="card">
+            <div class="card_img">
+              <img src="pexels-eberhard-grossgasteiger-1287145.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <p><i class="fa-solid fa-location-dot"></i> Manaslu Region Trek , Nepal , Restricted Region Trek</p>
+              <h5 class="card-title">Manaslu Round Trekking</h5>
+              <p class="card-text">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>  1 Reviews</p>
+              <div class="txt_str"> <p><i class="fa-solid fa-clock"></i> 17 Days</p>   <h5> <strike>$1910</strike> $1295 </h5></div>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            
+        </div> 
+      </div>
+
+      <div class="swiper-slide">   
+          <div class="card">
+            <div class="card_img">
+              <img src="pexels-stephan-seeber-1054218.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <p><i class="fa-solid fa-location-dot"></i> Annapurna Region Trek , Nepal</p>
+              <h5 class="card-title">Annapurna Circuit Trek</h5>
+              <p class="card-text">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i> 4 Reviews</p>
+              <div class="txt_str"> <p><i class="fa-solid fa-clock"></i> 15 Days</p>  <h5> <strike>$1910</strike> $1295 </h5></div>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div> 
+      </div>
+
+
+      <div class="swiper-slide">  
+        <div class="card">
+          <div class="card_img">
+            <img src="pexels-eberhard-grossgasteiger-1287145.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <p><i class="fa-solid fa-location-dot"></i> Manaslu Region Trek , Nepal , Restricted Region Trek</p>
+            <h5 class="card-title">Manaslu Round Trekking</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>  1 Reviews</p>
+            <div class="txt_str"> <p><i class="fa-solid fa-clock"></i> 17 Days</p>   <h5> <strike>$1910</strike> $1295 </h5></div>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          
+      </div> 
+    </div>
+      
+      
+      
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      
+    
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+      
+
+      </div>
+        <!-- [[[[[]]]]] -->
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+   
+    </div>
+    <div class="trek">
+      <h2>Top Destinations</h2>
+      <div class="trek_img row">
+        <div class=" col-md-7 col-sm-6 col-6 tr">
+          <div class="trimg"><img src="pexels-eberhard-grossgasteiger-1287145.jpg" alt=""> 
+            <div class="everest_min">
+              <h4>Everest Region Trek</h4>
+              <button>25 tours</button>
+            </div>
+          </div> 
+        </div>
+        <div class=" col-md-5 col-sm-6 col-6 tr">
+          <div class="trimg"><div> <img src="pexels-stephan-seeber-1054218.jpg" alt="">
+            <div class="everest_min">
+              <h4>Annapurna Region Trek</h4>
+              <button>26 tours</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="trek_img2 row">
+      <!-- // -->
+      <div class=" col-md-4 col-sm-6 col-6 tr">
+        <div class="trimg"><img src="GettyImages-514676075.jpg" alt="" height="255px"> 
+          <div class="everest_min">
+            <h4>Langtang Region Trek</h4>
+            <button>8 tours</button>
+          </div>
+        </div> 
+      </div>
+      
+      <div class=" col-md-4 col-sm-6 col-6 tr">
+        <div class="trimg"><img src="p05ccrb2.jpg" alt="" height="255px"> 
+          <div class="everest_min">
+            <h4>Manaslu Region Trek</h4>
+            <button>7 tours</button>
+          </div>
+        </div> 
+      </div>
+      
+      <div class=" col-md-4 col-sm-6 col-6 tr">
+        <div class="trimg"><img src="istockphoto-613111906-612x612.jpg" alt="" height="255px"> 
+          <div class="everest_min">
+            <h4>Restricted Region Trek</h4>
+            <button>16 tours</button>
+          </div>
+        </div> 
+      </div>
+    </swiper-container>
+      <!-- // -->
+    </div>
+  </div>
+</div>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<div class="travel">
+  <div class="container">
+    <h1>Travel</h1>
+    <!-- Tablist -->
+    <ul class="nav nav-tabs" id="myTab1" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="trekking-tab" data-bs-toggle="tab" data-bs-target="#trekking" type="button" role="tab" aria-controls="trekking" aria-selected="true">Nepal Trekking</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tours-tab" data-bs-toggle="tab" data-bs-target="#tours" type="button" role="tab" aria-controls="tours" aria-selected="false">Nepal Tours</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="siteseeing-tab" data-bs-toggle="tab" data-bs-target="#siteseeing" type="button" role="tab" aria-controls="siteseeing" aria-selected="false">Peak Climbing</button>
+      </li>
+    </ul>
+    <!-- tab content -->
+    <div class="tab-content" id="myTabContent1">
+      
+      <div class="tab-pane fade show active" id="trekking" role="tabpanel" aria-labelledby="trekking-tab">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="card" >
+              <div class=" card_img_wrapper "> 
+                <!-- wait -->
+              <img src="tr.jpg" class="card-img-top" alt="..." height="240px">
+              </div>
+              <div class="card-body">
+                <p><i class="fa-solid fa-location-dot"></i> Everest Region Trek , Nepal</p>
+               <div class="eve"> <h5><a href="everest.html"> Everest Base Camp Sleeping Trek  </a> </h5></div>
+                  <div class="swipecard"> 
+                    <div><p><i class="fa-solid fa-clock"></i> 16 days</p> </div> 
+                      <div class="sub_swipecard"> 
+                        <div><h3> <i class="fa-solid fa-tag"></i> </h3> </div>
+                        <div> <h3>$1890</h3> </div>
+                      </div>
+                  </div> 
+              </div>
+            </div>
+          </div>     
+
+          <div class="col-md-4">
+            <div class="card" >
+              <div class="xoto">
+              <img src="tr1.jpg" class="card-img-top" alt="..." height="240px">
+              </div>
+              <div class="card-body">
+                <p><i class="fa-solid fa-location-dot"></i> Everest Region Trek , Nepal</p>
+                <h5>Arun Valley Everest Base Camp Trek</h5> 
+                <div class="swipecard"> 
+                  <div><p><i class="fa-solid fa-clock"></i> 30 days</p> </div> 
+                    <div class="sub_swipecard"> 
+                      <div><h3> <i class="fa-solid fa-tag"></i> </h3> </div>
+                      <div> <h3>$2600</h3> </div>
+                    </div>
+                </div>              
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-md-4">
+            <div class="card" >
+              <div class="xoto">
+              <img src="tr2.jpg" class="card-img-top" alt="..." height="240px">
+              </div>
+              <div class="card-body">
+                <p><i class="fa-solid fa-location-dot"></i> Everest Region Trek , Nepal</p>
+                <h5>Everest Luxury  With Helicopter</h5>
+                <div class="swipecard"> 
+                  <div><p><i class="fa-solid fa-clock"></i> 8 days</p> </div> 
+                    <div class="sub_swipecard"> 
+                      <div><h3> <i class="fa-solid fa-tag"></i> </h3> </div>
+                      <div> <h3>$5550</h3> </div>
+                    </div>
+                </div>                
+              </div>
+            </div>
+          </div> 
+
+      </div>
+      </div>
+      
+      
+      <div class="tab-pane fade " id="tours" role="tabpanel" aria-labelledby="tours-tab">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="xoto">
+              <img src="t1.jpg" class="card-img-top" alt="..." height="240px">
+            </div>
+                <div class="card-body">
+                  <p>Nepal</p>
+                  <h5>Explore Nepal Tour</h5>
+                  <div class="nepal_tours"> 
+                      <div >
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div>
+                        <p>3 Reviews</p>
+                      </div>
+                  </div>                                
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="t2.jpg" class="card-img-top" alt="..." height="240px">
+              <div class="card-body">
+                <p>Nepal</p>
+                <h5>3 Days Muktinath Tour</h5>
+                <div class="nepal_tours"> 
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div>
+                    <p>10 Reviews</p>
+                  </div>
+                </div> 
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="t3.jpg" class="card-img-top" alt="..." height="240px">
+              <div class="card-body">
+                <p>Nepal</p>
+               <h5>Everest Mountain Flight</h5>
+               <div class="nepal_tours"> 
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div>
+                  <p>8 Reviews</p>
+                </div>
+               </div> 
+               
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+    <div class="tab-pane fade  " id="siteseeing" role="tabpanel" aria-labelledby="siteseeing-tab">
+      
+
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card" >
+            <img src="p1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <div class="swipecard"> 
+                <div><p><i class="fa-solid fa-clock"></i> 8 days</p> </div> 
+                  <div class="sub_swipecard"> 
+                    <div><h3> <i class="fa-solid fa-tag"></i> </h3> </div>
+                    <div> <h3>$5550</h3> </div>
+                  </div>
+              </div>
+              <a href="#" class="btn btn-primary"> Inquiry</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="p2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <div class="swipecard"> 
+                <div><p><i class="fa-solid fa-clock"></i> 6 days</p> </div> 
+                  <div class="sub_swipecard"> 
+                    <div><h3> <i class="fa-solid fa-tag"></i> </h3> </div>
+                    <div> <h3>$3830</h3> </div>
+                  </div>
+              </div>
+              <a href="#" class="btn btn-primary"> Inquiry</a>
+            </div>
+          </div>
+        </div>
+          
+          <div class="col-md-4">
+            <div class="card" >
+              <img src="p3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <div class="swipecard"> 
+                  <div><p><i class="fa-solid fa-clock"></i> 12 days</p> </div> 
+                    <div class="sub_swipecard"> 
+                      <div><h3> <i class="fa-solid fa-tag"></i> </h3> </div>
+                      <div> <h3>$7000</h3> </div>
+                    </div>
+                </div>
+              <a href="#" class="btn btn-primary"> Inquiry</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>            
+  </div>
+</div>
+</div>
+<div class="blog">
+  <div class="container">
+        <div class="min_blog">
+          <div>
+            <iframe width="560" height="400" src="https://www.youtube.com/embed/rfYmxSC1HrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="blog_content">
+            <h3>Trekking In Nepal, Nepal Trekking Routes</h3>
+            <p>Are you planning for Trekking in Nepal? Nepal Trekking Routes is pleased to help you explore the majestic Himalayan nation, Nepal. Nepal Trekking Routes is founded by local people who always work relentlessly and tirelessly for the betterment of tourism in Nepal. Officially opened in 2015 AD, Nepal Trekking Routes Pvt. Ltd. NTR is registered as a trekking company under the Department of Tourism and the Company Registrar’s Office, Nepal. Now We are partnering with one of the best travel company in America is Travel Stride .</p>
+          <button class="see_all">SEE ALL</button>
+          </div>
+        </div>  
+</div>
+</div>
+
+  <div class="complex_swiper">
+    <div class="swiper mySwiperC" id="swipe_up">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide last_wrapper">
+            <img src="./GettyImages-514676075.jpg" alt="" height="350px">
+              <div class="last_swipe">
+                <h4>Everest Base Camp Trek With Helicopter Return</h4>
+                  <div class="last_swipe1">
+                    <div> <i class="fa-solid fa-clock"></i> 9 Days </div>
+                    <div><i class="fa-solid fa-location-dot"></i> Everest Region Trek, Nepal</div>
+                    <div class="last_swipe_small">
+                      <div> <i class="fa-solid fa-mountain-sun"></i> 5360m  </div>
+                      <div><i class="fa-solid fa-tag"></i> $1955 </div>
+                    </div>
+                  </div>
+                  <div class="paragraph"> <p> Mount Everest is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. Its elevation of 8,848.86 m was most recently established in 2020 by the Chinese and Nepali authorities.Mount Everest is so special not only because it is the highest peak in the world, but also the main peak of the Himalayas.</p></div>
+                  <div> <button class="parabtn">SHOW MORE</button></div>
+                </div>
+        </div>
+
+        <div class="swiper-slide last_wrapper">
+          <img src="np.jpg" alt="" height="350px">
+          <div class="last_swipe">
+            <h4>Everest Base Camp Trek With Helicopter Return</h4>
+              <div class="last_swipe1">
+                <div> <i class="fa-solid fa-clock"></i> 9 Days </div>
+                <div><i class="fa-solid fa-location-dot"></i> Everest Region Trek, Nepal</div>
+                <div class="last_swipe_small">
+                  <div> <i class="fa-solid fa-mountain-sun"></i> 5360m  </div>
+                  <div><i class="fa-solid fa-tag"></i> $1955 </div>
+                </div>
+              </div>
+              <div class="paragraph"> <p> Mount Everest is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. Its elevation of 8,848.86 m was most recently established in 2020 by the Chinese and Nepali authorities.Mount Everest is so special not only because it is the highest peak in the world, but also the main peak of the Himalayas.</p></div>
+              <div> <button class="parabtn">SHOW MORE</button></div>
+            </div>
+        </div>
+
+        <div class="swiper-slide last_wrapper">
+          <img src="np2.jpg" alt="" height="350px">
+          <div class="last_swipe">
+            <h4>Everest Base Camp Trek With Helicopter Return</h4>
+              <div class="last_swipe1">
+                <div> <i class="fa-solid fa-clock"></i> 9 Days </div>
+                <div><i class="fa-solid fa-location-dot"></i> Everest Region Trek, Nepal</div>
+                <div class="last_swipe_small">
+                  <div> <i class="fa-solid fa-mountain-sun"></i> 5360m  </div>
+                  <div><i class="fa-solid fa-tag"></i> $1955 </div>
+                </div>
+              </div>
+              <div class="paragraph"> <p> Mount Everest is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. Its elevation of 8,848.86 m was most recently established in 2020 by the Chinese and Nepali authorities.Mount Everest is so special not only because it is the highest peak in the world, but also the main peak of the Himalayas.</p></div>
+              <div> <button class="parabtn">SHOW MORE</button></div>
+            </div>
+        </div>
+      
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+     
+      <div class="swiper-pagination"></div>
+    
+    </div>
+  </div>
+
+      <div class="secondary_cards">
+          <div class="container">
+            <h2>Recent News</h2>
+            <div class="secondary_cards_wrapper">
+              <div class="col-md-4">
+                <div class="card " style="width: 22rem;">
+                  <div class="xoto">
+                    <img src="bis.jpg" class="card-img-top" alt="..." height="235px">
+                   </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Bisket Jatra Festivals In Nepal</h5>
+                    <p class="card-text"><i class="fa-solid fa-calendar-days"></i> 3 weeks ago</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card   " style="width: 22rem;">
+                  <div class="xoto">
+                  <img src="ghodejatra.jpg" class="card-img-top" alt="..." height="235px">
+                 </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Bisket Jatra Festivals In Nepal</h5>
+                    <p class="card-text"><i class="fa-solid fa-calendar-days"></i> 2 months ago</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card " style="width: 22rem;">
+                  <div class="xoto">
+                    <img src="holi.jpg" class="card-img-top" alt="..." height="235px">
+                   </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Bisket Jatra Festivals In Nepal</h5>
+                    <p class="card-text"><i class="fa-solid fa-calendar-days"></i> 2 months ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="secondary_cards_wrapper">
+              <div class="col-md-4">
+                <div class="card   " style="width: 22rem;">
+                  <div class="xoto">
+                  <img src="pashupati-10072017075925.jpg" class="card-img-top" alt="..." height="235px">
+                 </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Bisket Jatra Festivals In Nepal</h5>
+                    <p class="card-text"><i class="fa-solid fa-calendar-days"></i>3 months ago</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card   " style="width: 22rem;">
+                  <div class="xoto">
+                  <img src="yak.jpg" class="card-img-top" alt="..." height="235px">
+                 </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Bisket Jatra Festivals In Nepal</h5>
+                    <p class="card-text"><i class="fa-solid fa-calendar-days"></i> 4 months ago</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card   " style="width: 22rem;">
+                  <div class="xoto">
+                  <img src="heli.jpg" class="card-img-top" alt="..." height="235px">
+                 </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Bisket Jatra Festivals In Nepal</h5>
+                    <p class="card-text"><i class="fa-solid fa-calendar-days"></i> 3 weeks ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class=" read_icon"><a href=""> Read All Blogs </a> <i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+      </div>
+      <div class="autoswiper">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./t1.jpg" alt="">
+
+          </div>
+          <div class="col-md-6">
+            <div class="swiper testimonial" id="testSlider">
+              <div class="swiper-wrapper">                                
+        
+                <div class="swiper-slide last_wrapper_auto">
+                       <h1>Our Top Reviews</h1> 
+                       <h3> Ghorepani Ghandruk Trek With “Nepal Trekking Routes Treks And Expeditions”.</h3>
+                       <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                        <p>This is my 1st solo trekking trip in the new year. I had a great memory with my experienced trekking guide, Mr. Nawin from Nepal Trekking Routes. I chose an easy trekking routes which there are 6 days 5 nights trekking to Poon Hills(the highest point is 3220M). For me, I don’t have any experience to trek in every day and at the high attitude trekking in Hong Kong. But I am so lucky to meet Mr. Shailesh and his team in Nepal Trekking Routes. They gave me a briefing and suggested me to have enough gears to go to the mountain. I will soon plan for Annapurna circuit trek</p>
+                        <h4> JASMINE LEUNG</h4>
+                </div>
+        
+                <div class="swiper-slide last_wrapper_auto">
+                        <h1>Our Top Reviews</h1> 
+                        <h3> Ghorepani Ghandruk Trek With “Nepal Trekking Routes Treks And Expeditions”.</h3>
+                        <p>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p>This is my 1st solo trekking trip in the new year. I had a great memory with my experienced trekking guide, Mr. Nawin from Nepal Trekking Routes. I chose an easy trekking routes which there are 6 days 5 nights trekking to Poon Hills(the highest point is 3220M). For me, I don’t have any experience to trek in every day and at the high attitude trekking in Hong Kong. But I am so lucky to meet Mr. Shailesh and his team in Nepal Trekking Routes. They gave me a briefing and suggested me to have enough gears to go to the mountain. I will soon plan for Annapurna circuit trek</p>
+                        <h4> JASMINE LEUNG</h4>
+                </div>
+              
+              </div>
+        
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+             
+              <div class="swiper-pagination"></div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="above_footer">
+        <div class="left_blog">
+          <h3>Get Updates & More</h3> 
+          <p>Thoughtful Thoughts To Your Inbox</p>
+        </div>
+        <div class="right_search">
+          <input type="search" name="" id="search"> <button id="butt">SUBSCRIBE</button>
+        </div>
+      </div>
+
+
+      <div class="main_footer">
+        <div class="connect_with_us">
+            <div class="c_w_u"><h5>Connect With Us</h5></div>
+            <div class="footer_logo"><img src="winter-in-canada-moraine-lake-hd-wallpaper-thumb.jpg" alt="" height="100px" width="150px"></div>
+            <div class="footer_content"><i class="fa-solid fa-location-dot"></i> Bhagwati Mandir, Thamel Marg, Kathmandu, Nepal</div>
+            <div class="footer_content"><i class="fa-solid fa-envelope"></i> nepaltrekkingroutes@gmail.com</div>
+            <div class="footer_content"><i class="fa-solid fa-phone"></i> +977 9841064142</div>
+            <div class="footer_content"><i class="fa-solid fa-truck-fast"></i> +977 9851070897</div>
+            <div class="footer_content">Follow Us:</div>
+            <div class="footer_content_awesome"><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i></div>
+        </div>
+
+    <!-- <div class="row"> -->
+      <!-- <div class="col-md-4"> -->
+        <div class="useful_info">
+          <div class="c_w_u"><h5>Useful Info</h5></div>
+          <div class="footer_content"><p>Equipment Check List</p> </div>
+          <div class="footer_content"><p>Nepal Visa Info</p> </div>
+          <div class="footer_content"><p>Responsible Tourism Policy</p> </div>
+          <div class="footer_content"><p>Terms and Condition</p> </div>
+          <div class="footer_content"><p>Book Now</p> </div>
+        </div>
+      <!-- </div> -->
+
+      <!-- <div class="col-md-4"> -->
+        <div class="useful_info">
+          <div class="c_w_u"><h5>Trekking Routes Info</h5></div>
+          <div class="footer_content"><p>About Us</p> </div>
+          <div class="footer_content"><p>Contact Us</p> </div>
+          <div class="footer_content"><p>Travel Info</p> </div>
+          <div class="footer_content"><p>Privacy Policy</p> </div>
+        </div>
+      <!-- </div> -->
+
+      <!-- <div class="col-md-4"> -->
+        <div class="useful_info">
+          <div class="c_w_u"><h5>Activities in Nepal</h5></div>
+          <div class="footer_content"><p>Nepal Trekking</p> </div>
+          <div class="footer_content"><p>Peak Climbing</p> </div>
+          <div class="footer_content"><p>Nepal Mountaineering</p> </div>
+          <div class="footer_content"><p>Nepal Skydiving</p> </div>
+        </div>
+      <!-- </div> -->
+    <!-- </div> -->
+
+
+      </div>
+      <div class="footer_logo_separate">
+        <div>
+        <h5>We Are Associated With</h5>
+        <div class="footer_logo_logos">
+          <div> <img src="keep.jpeg" alt="" height="70px" width="70px"> </div>
+          <div> <img src="download (1).jpg" alt="" height="70px" width="70px"></div>
+          <div> <img src="ntb_logo-1663927863_resized1920.jpg" alt="" height="70px" width="70px"></div>
+          <div> <img src="nepal_coat_of_arm-logo-754BC1FCDB-seeklogo.com.png" alt="" height="70px" width="70px"></div>
+          <div> <img src="NMA-Logo.png" alt="" height="70px" width="70px"> </div>
+          <div> <img src="png-transparent-computer-icons-spotify-graphics-streaming-media-spotify-icon-logo-grass-feather.png" alt="" height="70px" width="70px"> </div>
+        </div>
+        </div>
+        
+          <div>
+            <h5>We Accept</h5>
+            <div class="footer_logo_logos">
+          <div><img src="1200px-American_Express_logo_(2018).svg.png" alt="" height="70px" width="70px"></div>
+          <div> <img src="Visa-Logo-1992.png" alt="" height="70px" width="70px"> </div>
+          <div> <img src="Mastercard-logo.svg.png" alt="" height="70px" width="70px"> </div>
+          <div> <img src="UnionPay_logo.svg.png" alt="" height="70px" width="70px"> </div>
+          </div>
+          </div>
+        
+
+      </div>
+
+<div class="copyright">  <p>Copyright © 2020 by Nepal Trekking Routes</p></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,610 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;    
+}
+.container{
+    max-width: 80%;
+}
+.form-control{
+    border: none;
+}
+img{
+    max-width: 100%;
+}
+body{
+    margin-bottom: 0px;
+    /* height: 1000px; */
+    background-color: #e6ebf3;
+    overflow-x: hidden;
+}
+.top_part{
+    margin-top: 1%;
+    margin-left: 10%;
+    width: 80%;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.top_part p{
+  color: rgb(255, 255, 255);
+}
+.navbar ul li a{
+    color: rgb(255, 255, 255);
+}
+.top{
+position: relative;
+}
+.logo, .navbar{
+    font-size: 20px;
+    color: aliceblue;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar{
+    margin-left: 7%;
+}
+.navbar ul li a{
+padding-left: 20px;
+}
+.navbar a{
+
+    color: aliceblue;
+}
+.nav_icon i{
+    color: white;
+    font-size: 30px;
+}
+.nav_icon{
+    margin-left: 30px;
+
+}
+.nav_right{
+display: flex;
+}
+
+/* /////////////////////////////////////////////////////////// */
+.tab_bs{
+    margin-left: 15%;
+    width: 70%;
+    margin-top: -5%;
+    z-index: 1000;
+    position: relative;
+    background-color: rgb(253, 252, 252);
+    box-shadow: 0px 5px 5px 0px #817f7f;
+    border-radius: 5px;
+    /* border-bottom: rgb(82, 75, 75); */
+}
+.forms{
+    padding-top: 10px;
+    display: flex;
+    padding-bottom: 20px;
+
+}
+.form_mini{
+    border-left: 1px solid black;
+    padding-left: 20px;
+}
+.forms button {
+    margin-left: 20px;
+    border: none;
+    background-color: #2960e1;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.divs{
+    padding-top: 2%;
+    /* position: absolute; */
+}
+.div_min{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+.divs{
+    width: 80%;
+    margin: auto;
+}
+
+.div_min a, .navbar ul li a{
+    text-decoration: none;
+}
+
+.div_img{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dimg img{
+    border-radius: 10px;
+}
+.dimg i{
+    
+    /* color: #a39694; */
+    position: absolute;
+    font-size: 2.7vmin;
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.love{
+    padding: 7.5px;
+    border-radius:5px;
+    border-bottom-left-radius: 12px;
+    background-color: whitesmoke;
+    margin-left: 19.2%;
+    margin-top: 0.4%;
+}
+#love1 i{
+    color:rgb(18, 17, 17) ;
+    background-color: #e4dcdc;
+}
+#love2 i{
+    color: #2960e1;
+    background-color: #dbe5ee;
+}
+#love3 i{
+    background-color: #e4dcdc;
+}
+#love4 i{
+    color: #2960e1;
+    background-color: #dbe8f4;
+}
+.form_mini:first-child{
+    border-left: none;
+}
+.cards{
+    margin: auto;
+    margin-top: 50px;
+    /* width: 80%; */
+   
+    border-top: 1px dashed gray;
+}
+.card_main{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.cards h2{
+    margin-top: 50px;
+}
+.card{
+    margin-left: 10px;
+}
+.card_img{
+    overflow: hidden;
+
+}
+/* -------------------- */
+.eve{
+    text-decoration: none;
+    list-style: none;
+}
+/* --------------------- */
+.card:hover img{
+transform: scale(1.1);
+transition: .3s ease-in-out;
+
+}
+.trek{  
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+   
+    /* width: 80%; */
+}
+.trek_img img{
+    height: 300px;
+    width: 100%;
+}
+.trek_img{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* width: 100%; */
+}
+.trek_img .tr{
+    /* padding: 30px; */
+}
+.trek_img:hover img{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+.trimg{
+    position: relative;
+    overflow: hidden;
+}
+.card-body i ,p{
+    color: #585757;
+}
+.card-text i{
+    color: rgb(255, 172, 5);
+}
+.txt_str{
+    display: flex;
+    justify-content: space-between;
+}
+.everest_min{
+    color: white;
+    background-color: #5857579c;
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 6px ; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.everest_min button {
+    color: white;
+    background-color: orange;
+    padding: 5px 15px;    
+    border-radius: 20px;  
+}
+
+.trek_img2{
+    display: flex;
+}
+.trek_img2:hover img{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+/* ///////////////////////////// */
+.travel{
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+}
+.travel h1{
+    color: white;
+    margin-left: 45%;
+}
+
+.pagination-lg .page-link {
+    padding: 1.5rem 1.5rem;
+}
+.tab_bss{
+    width: 100%;
+}
+#Nepal_Trekking , #Nepal_Tours, #Peak_Climbing {
+    background-color: rgb(26, 170, 0);
+    padding: 20px 120px;
+    border-radius: 40px;
+    margin-right: 1px;
+    font-size: 20px;
+    color: white;
+}
+ #Peak_Climbing:active {
+    background-color: orange;
+}
+#Nepal_Tours:active {
+    background-color: orange;   
+}
+#Nepal_Trekking:active {
+    background-color: orange;  
+}
+.nav-tabs{
+    width: 100%;
+    margin-left: 4%;
+    border: none;
+}
+.card-body{
+    margin-left: 4%;
+}
+.card_wrapper{
+    display: flex;
+}
+.card{
+    overflow: hidden;
+}
+/* //////////////// */
+/* .myswipe {
+    
+} */
+
+.card_main{
+    position: relative;
+}
+.swiper-button-prev , .swiper-button-next {
+/* margin-top: -1%; */
+position: absolute;
+top: -25px;
+background-color: green;
+color: white;
+font-size: 20px;
+}
+
+.swiper-button-prev {
+left:93%;
+
+}
+
+.swipecard{
+    display: flex;
+    justify-content: space-between;
+}
+.card_img_wrapper{
+    overflow: hidden;
+}
+/* wait */
+
+.sub_swipecard{
+    display: flex;
+    gap: 10px;
+    
+}
+.sub_swipecard i{
+   color: orange;
+}
+.nepal_tours{
+    display: flex;
+    gap: 20px;
+}
+.nepal_tours i{
+    color: orange;
+}
+/* /////////////////////////// */
+.blog{
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+.min_blog{
+display: flex;
+gap: 120px;
+}
+.blog iframe {
+    border-radius: 20px;
+}
+.blog_content{
+    width: 40%;
+}
+
+.see_all{
+    padding: 10px 30px 10px 30px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.see_all:hover{
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+}
+
+/* ////////////////////////////////// */
+
+.complex_swiper{
+    
+    background-image: url("images.jpg");
+    background-color: rgba(44, 44, 44, 0.65);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mySwiperC .swiper-button-next,.mySwiperC .swiper-button-prev{
+    position: absolute;
+    top: 50%;
+    color:white;
+    border:solid white;
+    padding:20px;
+    background-color: transparent;        
+}
+
+.mySwiperC .swiper-button-prev:after , .mySwiperC .swiper-button-next:after {  
+font-size: 14px;
+
+ }
+
+.mySwiperC .swiper-button-prev{
+    left: 1%;
+}
+.mySwiperC .swiper-slide {
+    left: 11%;
+}
+.mySwiperC .swiper-wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+/* //////////////////////////////////////// */
+.last_swipe{
+    color: white;
+}
+.last_wrapper{
+    display: flex;
+    gap: 60px;
+}
+.last_swipe1{
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 3px solid green;
+    border-bottom: 1.5px solid green;
+    display: flex;
+    gap: 30px;
+    width: 57%;
+}
+.last_swipe_small {
+    display: flex;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 20px;
+}
+.paragraph p{
+    
+    color: white;
+}
+.paragraph{
+    width: 60%;
+    margin-top: 30px;
+}
+.parabtn{
+    padding:15px 30px;
+    color:white;
+    background-color: green;
+}
+.parabtn:hover{
+background-color: transparent;
+border: 1px solid green;
+}
+/* //////////////////////////////////// */
+.secondary_cards{
+    padding-top:100px ;
+    padding-bottom:100px ;
+    background-color: white;
+}
+.secondary_cards_wrapper{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.secondary_cards_wrapper i{
+    color: #585757;
+}
+.xoto{
+    overflow: hidden;
+}
+.read_icon{
+    color: green;
+    margin-top: 40px;
+}
+.read_icon a{
+    text-decoration: none;
+    color: green;
+}
+.read_icon:hover i{
+    color: #2960e1;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+}
+.review_swiper{
+    display: flex;
+}
+/* //////////////////////////// */
+
+
+    
+  .above_footer{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 25%;
+    padding-right: 25%;
+    background-color:rgb(221, 221, 221);
+    display:flex;
+    justify-content: space-between;
+  }
+
+  #search{
+    width: 60%;
+    height: 50px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 5px;
+    margin-right: -4px;
+
+}
+  #butt{
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background-color: rgb(0, 158, 0);
+    border: none;
+    border-radius: 5px;
+}
+.last_wrapper_auto i{
+color: orange;
+}
+.last_wrapper_auto{
+padding-top: 40px;
+align-items: center;
+text-align: center;
+color: white;
+}
+.autoswiper{
+    background-color: rgb(0, 0, 0);
+}
+.autoswiper p{
+    color:white
+}
+.last_wrapper_auto h3{
+    padding-top: 20px;
+}
+.autoswiper img{
+    height: 100%;
+}
+/* /////////////////////////////////// */
+.connect_with_us{
+    padding-left: 10px;
+    padding-top: 40px;
+    width: 25%;
+    background-color: rgb(212, 212, 234);
+    padding-right: 10px;
+    /* padding-bottom: 30px; */
+}
+.c_w_u{
+    border-bottom: 1px solid rgb(89, 89, 89);
+    padding-bottom: 10px;
+}
+.footer_logo{
+    padding-top: 20px;
+}
+.main_footer{
+    height: 540px;
+    display: flex;
+}
+.c_w_u, .footer_logo, .footer_content ,.footer_content_awesome{
+    padding-top: 20px;
+}
+.footer_content_awesome i{
+    padding-right: 30px;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.useful_info{
+    padding-left: 10px;
+    padding-top: 40px;
+    width: 25%;
+    padding-right: 10px;
+}
+.footer_right{
+    display: flex;
+}
+.footer_logo_logos{
+    display: flex;
+    gap: 30px;
+}
+.footer_logo_separate{
+    margin-left: 27%;
+    margin-top: -10%;
+    text-align: center;
+    display: flex;
+    gap: 100px;
+}
+.footer_logo_logos img{
+object-fit: contain;
+}
+.copyright{
+    padding: 20px 38%;
+    background-color: #000000;
+    margin-top: 50px;
+}
+.copyright p{
+    color: white;
+}
